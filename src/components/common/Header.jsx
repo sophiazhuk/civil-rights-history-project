@@ -139,7 +139,7 @@ export default function Header() {
           </div>
 
           {/* About */}
-          <div className="w-full">
+          <div className="w-full border-b border-black pb-2 sm:pb-3 lg:pb-6">
             <Link
               to="/about"
               className="flex items-center justify-between w-full hover:opacity-80 transition-opacity"
@@ -150,6 +150,22 @@ export default function Header() {
               </div>
               <div className="text-right text-black text-2xl sm:text-3xl md:text-4xl lg:text-8xl font-medium" style={{ fontFamily: 'Inter, sans-serif' }}>
                 About
+              </div>
+            </Link>
+          </div>
+
+          {/* Lesson Plan */}
+          <div className="w-full">
+            <Link
+              to="/lesson-plan"
+              className="flex items-center justify-between w-full hover:opacity-80 transition-opacity"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <div className="text-black text-xl lg:text-3xl font-light" style={{ fontFamily: 'Chivo Mono, monospace' }}>
+                05.
+              </div>
+              <div className="text-right text-black text-2xl sm:text-3xl md:text-4xl lg:text-8xl font-medium" style={{ fontFamily: 'Inter, sans-serif' }}>
+                Lesson Plan
               </div>
             </Link>
           </div>

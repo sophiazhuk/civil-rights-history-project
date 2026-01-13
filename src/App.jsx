@@ -15,6 +15,7 @@ import ContentDirectory from './pages/ContentDirectory'
 import TopicGlossary from './pages/TopicGlossary'
 import InterviewIndex from './pages/InterviewIndex'
 import About from './pages/About'
+import LessonPlan from './pages/LessonPlan'
 
 
 
@@ -95,6 +96,14 @@ export default function App() {
         <ProtectedRoute>
           <Layout>
             <About />
+          </Layout>
+        </ProtectedRoute>
+      } />
+
+      <Route path="/lesson-plan" element={
+        <ProtectedRoute>
+          <Layout>
+            <LessonPlan />
           </Layout>
         </ProtectedRoute>
       } />
